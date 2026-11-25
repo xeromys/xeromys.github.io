@@ -1,0 +1,125 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Xeromys: small software tools for Australian businesses</title>
+<meta name="description" content="Xeromys builds small online software tools for Australian businesses. EasyABA creates ABA bank payment files for bulk payments.">
+<style>
+  :root {
+    --ink: #1d2a2f; --muted: #5a6b70; --line: #dde5e3; --bg: #fbfcfb;
+    --accent: #1f6f66; --accent-ink: #ffffff; --soft: #eef5f3;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; color: var(--ink); background: var(--bg); }
+  .wrap { max-width: 46rem; margin: 0 auto; padding: 0 1.25rem; }
+  header { border-bottom: 1px solid var(--line); }
+  header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding-top: 1rem; padding-bottom: 1rem; flex-wrap: wrap; }
+  .brand { font-weight: 700; font-size: 1.25rem; letter-spacing: .01em; color: var(--ink); text-decoration: none; }
+  nav a { color: var(--muted); text-decoration: none; margin-left: 1rem; font-size: .95rem; }
+  nav a:first-child { margin-left: 0; }
+  nav a:hover { color: var(--accent); }
+  h1 { font-size: 2rem; line-height: 1.2; margin: 2.5rem 0 .75rem; }
+  h2 { font-size: 1.35rem; margin: 2.75rem 0 .5rem; }
+  h3 { font-size: 1.1rem; margin: 1.5rem 0 .25rem; }
+  p, li { color: var(--ink); }
+  .lead { font-size: 1.15rem; color: var(--muted); margin-top: 0; }
+  .product { background: #fff; border: 1px solid var(--line); border-radius: 10px; padding: 1.5rem; margin-top: 1rem; }
+  .product h3 { margin-top: 0; font-size: 1.3rem; }
+  .price { font-size: 1.15rem; font-weight: 600; margin: .75rem 0; }
+  .button { display: inline-block; background: var(--accent); color: var(--accent-ink); padding: .6rem 1.1rem; border-radius: 6px; text-decoration: none; font-weight: 600; }
+  .button:hover { filter: brightness(1.08); }
+  .note { background: var(--soft); border-radius: 8px; padding: .9rem 1.1rem; }
+  ul { padding-left: 1.2rem; }
+  footer { border-top: 1px solid var(--line); margin-top: 3.5rem; padding: 1.5rem 0 2.5rem; color: var(--muted); font-size: .9rem; }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="brand" href="#">Xeromys</a>
+    <nav>
+      <a href="#products">Products</a>
+      <a href="#contact">Contact</a>
+      <a href="#refunds">Refunds</a>
+      <a href="#cancelling">Cancelling</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <h1>Small software tools for Australian businesses</h1>
+  <p class="lead">Xeromys builds simple online tools that each do one job well, sold as monthly
+  subscriptions. You sign up and pay online, and there are no physical goods.</p>
+
+  <section id="products">
+    <h2>Products</h2>
+
+    <div class="product">
+      <h3>EasyABA</h3>
+      <p>EasyABA creates ABA bank payment files, the standard bulk payment file Australian banks
+      accept (also called a Cemtex file). Enter or upload who to pay and how much, download the
+      file, and upload it to your bank to pay many suppliers or staff in one go.</p>
+      <ul>
+        <li>Checks BSBs, account numbers and amounts before the file is made</li>
+        <li>Works with the major Australian banks' bulk payment upload</li>
+        <li>Nothing to install: it runs in your web browser</li>
+      </ul>
+      <p class="price">[$9.90] per month</p>
+      <a class="button" href="[mailto:xeromys@gmail.com]">Get started with EasyABA</a>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Questions, help with your account or billing: email
+    <a href="mailto:xeromys@gmail.com">xeromys@gmail.com</a>. We reply within two business days.</p>
+  </section>
+
+  <section id="billing">
+    <h2>Billing</h2>
+    <p>Subscriptions are billed monthly in Australian dollars, in advance, by card through Stripe.
+    We never see or store your card details. You can change your plan, update your card or
+    download your invoices at any time from <b>Manage billing</b> in your account.</p>
+  </section>
+
+  <section id="cancelling">
+    <h2>Cancelling</h2>
+    <p>You can cancel at any time from <b>Manage billing</b> in your account, or by emailing us.
+    Your subscription stays active until the end of the month you have paid for, then stops;
+    you will not be charged again.</p>
+  </section>
+
+  <section id="refunds">
+    <h2>Refunds and disputes</h2>
+    <p>Because you can cancel at any time, we do not refund part-months. If something has gone
+    wrong (you were charged twice, charged after cancelling, or the product did not work as
+    described) email us and we will put it right, including a refund where one is due.</p>
+    <p class="note">Nothing here limits your rights under the Australian Consumer Law, including
+    your right to a refund for a major failure.</p>
+    <p>If you do not recognise a charge, please contact us before disputing it with your bank;
+    it will show on your statement as <b>XEROMYS</b>.</p>
+  </section>
+
+  <section id="privacy">
+    <h2>Privacy</h2>
+    <p>We use the details you give us only to run your account and provide the product. We do not
+    sell or share them. Payments are handled by Stripe under
+    <a href="https://stripe.com/au/privacy">Stripe's privacy policy</a>.</p>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    Xeromys, operated by William Forsyth (sole trader) · ABN [16 028 515 126] · New South Wales, Australia ·
+    <a href="mailto:xeromys@gmail.com">xeromys@gmail.com</a>
+  </div>
+</footer>
+
+</body>
+</html>
